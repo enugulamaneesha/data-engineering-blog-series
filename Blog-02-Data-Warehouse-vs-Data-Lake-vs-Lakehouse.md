@@ -106,6 +106,8 @@ A Data Warehouse is useful when the main requirement is structured reporting. A 
 
 There is no universal winner. The right choice depends on business requirements, existing systems, data types, and workloads.
 
+![Data Warehouse vs Data Lake vs Lakehouse comparison](diagrams/storage-architecture-comparison.png)
+
 ## 6. How Databricks Implements the Lakehouse Architecture
 
 Databricks provides a unified platform for data engineering, SQL analytics, business intelligence, and machine learning.
@@ -201,6 +203,8 @@ The final data can support Power BI dashboards, SQL analytics, and AI or machine
 `Source CSV → Bronze → Silver → Gold → Power BI / SQL Analytics / AI`
 
 These are logical processing layers. They do not necessarily require three separate physical storage systems. In Databricks, they can be implemented as tables governed through Unity Catalog.
+
+![Databricks Lakehouse and Medallion Architecture](diagrams/databricks-lakehouse-medallion-architecture.png)
 
 ## 10. Conclusion
 
